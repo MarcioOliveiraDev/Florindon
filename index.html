@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FlorindON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+
+    <script src="https://kit.fontawesome.com/ffbf04e18f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+
+
+    <!--INICIO DA GRAAAAANNNNNNNNNNDE DIV CONTAINER QUE ABRIGA TODA A PÁGINA-->
+    <div class="w3-container">
+        <div class="w3-container w3-win8-orange w3-round-xlarge">
+            <div class="w3-row  w3-xlarge  w3-center">
+                <div class="w3-col m3">
+                    <!--<i class="fa fa-home"></i>-->
+                    <h3 class="w3-center">FLORINDON</h3>
+                </div>
+
+                <div class="w3-round-xlarge w3-col m5">
+
+                    <input type="text" class=" w3-input w3-white w3-mobile " placeholder="Pesquisar...">
+                </div>
+                <div class="w3-col m1">
+                    <button class="w3-bar-item w3-button w3-yellow w3-mobile" style="width: 100%">
+                        <i class="fa fa-search " style='font-size:30px;'></i>
+                    </button>
+
+                </div>
+
+                <div class="w3-col m3">
+
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button"><i
+                            class='fas fa-user-alt' style='font-size:30px'></i></button>
+
+                    <style>
+                        .w3-modal-content {
+                            background-color: #fefefe;
+                            margin: 50px auto;
+                            border: 1px solid #888;
+                            width: 80%;
+                            color: black;
+                        }
+                    </style>
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                            <div class="w3-center"><br>
+                                <span onclick="document.getElementById('id01').style.display='none'"
+                                    class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                                    title="Close Modal">&times;</span>
+                            </div>
+
+                            <form class="w3-container" action="/action_page.php">
+                                <div class="w3-section">
+                                    <label><b>Usuário</b></label>
+                                    <input class="w3-input w3-border w3-margin-bottom" type="text" name="usrname"
+                                        required>
+                                    <label><b>Senha</b></label>
+                                    <input class="w3-input w3-border" type="password" name="psw" required>
+                                    <button class="w3-button w3-block w3-green w3-section w3-padding"
+                                        type="submit">Login</button>
+                                    <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Lembrar
+                                    esse usuário
+                                </div>
+                            </form>
+
+                            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                                <button onclick="document.getElementById('id01').style.display='none'" type="button"
+                                    class="w3-button w3-red">Cancelar</button>
+                                <span class="w3-right w3-padding w3-hide-small">Esqueci <a href="#">senha</a></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <i class='fas fa-heart' style='font-size:30px'></i>
+                    <!-- <i class="fa fa-shopping-cart" style="font-size:30px"></i> -->
+
+                    <i class='fas fa-shopping-basket' style='font-size:30px'></i>
+                </div>
+
+            </div>
+            <style>
+                .center {
+                    margin-left: auto;
+                    width: 70%;
+                }
+            </style>
+            <div class="w3-bar center w3-row">
+                <div class=" w3-col s9">
+                    <a class="w3-bar-item w3-button w3-mobile" href="#">HOME</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="#catalogo">CATÁLOGO</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="#">FORNECEDORES</a>
+
+                    <a class="w3-bar-item w3-button w3-mobile" href="#">SOBRE NÓS</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="#">IDIOMAS</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="#">CARRINHO</a>
+                    <a class="w3-bar-item w3-button w3-mobile" href="#">FAQ</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--DIV Carrossel -->
+        <div class="w3-content w3-section" style="max-width:1200px">
+            <img class="mySlides w3-hover-opacity" src="IMG/esposicao-espacial3.jfif"
+                style="width:100%; height: 350px;">
+            <img class="mySlides w3-hover-opacity" src="IMG/esposicao-espacial2.jfif"
+                style="width:100%; height: 350px;">
+            <img class="mySlides w3-hover-opacity" src="IMG/esposicao-espacial.jfif" style="width:100%; height: 350px;">
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+
+
+        <!--DIV Nossos Produtos-->
+        <div class="w3-container w3-win8-orange w3-round-xlarge">
+            <h1 class="w3-center">Nossos Produtos</h1>
+        </div>
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-quarter ">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/Alpinia-AI.jfif" style="width:100%">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Alpínias</h5>
+                        <p class="w3-center">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/Heliconia-Strelitzia-AI.jfif" style="width:100%">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Heliconia Sterlitzia</h5>
+                        <p class="w3-center">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/bromelia-AI.jfif" style="width:100%">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Bromélias</h5>
+                        <p class="w3-center">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/anturio-AI.jfif" style="width:100%">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Antúrios</h5>
+                        <p class="w3-center">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-quarter ">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/Orquidea-AI.jfif" style="width:100%">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Orquídea</h5>
+                        <p class="w3-center">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/Cipo-sino-AI.jfif" style="width:100%">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Cipó-de-Sino</h5>
+                        <p class="w3-center">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-quarter">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/Camelia-AI.jfif" style="width:100%">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Camelia</h5>
+                        <p class="w3-center">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-quarter">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/hibisco-AI.jfif" style="width:100%">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Hibisco</h5>
+                        <p class="w3-center">R$ 9,90</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+        <div class="w3-container w3-win8-orange w3-round-xlarge">
+            <h1 class="w3-center w3-padding ">Mais Vendidos</h1>
+        </div>
+
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-half">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/Buque-tropical.jfif" style="width:100%; height: 550px;">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Buquê Tropical</h5>
+                        <p class="w3-center">R$ 49,90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-half">
+                <div class="w3-card w3-hover-opacity">
+                    <img src="IMG/cesto-flores-tropical.jfif" style="width:100%; height: 550px;">
+                    <div class="w3-container">
+                        <h5 class="w3-center">Cesto de Flores</h5>
+                        <p class="w3-center">R$ 89,90</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+
+
+
+
+
+
+
+
+
+        <!--
+		<div class="w3-container">
+			<h2>TABELA DE PRODUTOS</h2>
+			<p>The w3-border class adds a border around the table.</p>
+
+			<table class="w3-table w3-striped w3-border w3-hoverable">
+				<tr>
+					<th>Produto</th>
+					<th>Fornecedor</th>
+					<th>Preço R$</th>
+				</tr>
+				<tr>
+					<td>Tulipa</td>
+					<td>Smith</td>
+					<td>50.99</td>
+				</tr>
+				<tr>
+					<td>Girassol</td>
+					<td>Jackson</td>
+					<td>49.99</td>
+				</tr>
+				<tr>
+					<td>Orquídea</td>
+					<td>Johnson</td>
+					<td>69.99</td>
+				</tr>
+			</table>
+		</div> -->
+
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                padding: 20px;
+                margin: auto;
+                width: 80%;
+            }
+
+            .grid-item {
+                font-family: "Arial";
+            }
+        </style>
+
+
+        <footer class="w3-light-gray">
+            <div class="grid-container ">
+                <div class="grid-item">
+                    <h2>Serviços</h2>
+                    <p>Encontre um fornecedor</p>
+                    <p>FlorindON Giftcard</p>
+                    <p>Arranjos</p>
+                    <p>Personalizado</p>
+                    <p>Encomenda Internacional</p>
+                    <p>Perguntas Frequentes</p>
+                    <p>Termos e Condições</p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>Institucional</h2>
+                    <p>Quem Somos</p>
+                    <p>Nossos Fornecedores</p>
+                    <p>Blog</p>
+                    <p>Trabalhe Conosco</p>
+                    <p>Atendimento ao Cliente</p>
+                    <p>Minha Conta</p>
+                </div>
+
+                <style>
+                    .social {
+                        font-size: 5em;
+                        padding: 10px
+                    }
+                </style>
+
+
+                <div class="grid-item">
+                    <h2>Florindon Cooperativa</h2>
+                    <i class='social fa fa-facebook'></i>
+                    <i class='social fa fa-instagram'></i>
+                    <i class='social fa fa-rss'></i>
+                    <br>
+                    <i class='social fa fa-google'></i>
+                    <i class='social fa fa-telegram'></i>
+                    <i class='social fa fa-wordpress'></i>
+                </div>
+            </div>
+    </div>
+    </footer>
+    </footer>
+
+
+    <br>
+
+    </div>
+
+
+
+</body>
+
+</html>

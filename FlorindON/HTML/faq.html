@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FlorindON -> FAQ</title>
+    <link rel="icon" href="/IMG/favicon-flor2-removebg-preview-teste.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+
+    <script src="https://kit.fontawesome.com/ffbf04e18f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--INICIO DA  DIV CONTAINER QUE ABRIGA O CABEÇALHO-->
+    <!-- Sidebar on click -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+        <i class="fa fa-remove"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="/HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
+        <a href="/HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
+        <a href="/HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
+        <a href="/HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
+        <a href="#" class="w3-bar-item w3-button">IDIOMAS</a>
+    </nav>
+
+    <!--INICIO DA  DIV CONTAINER QUE ABRIGA O CABEÇALHO-->
+    <div class="w3-container">
+        <!-- Início do cabeçalho -->
+        <div class="w3-win8-orange w3-center">
+            <!-- Primeira linha do cabeçalho -->
+            <div class="w3-row  w3-xlarge  w3-center">
+                <div class="w3-col m4 w3-center">
+                    <!--<img class="logo" src="IMG/novoLogo.png" alt="FlorindON">-->
+                    <h2 class="nomelogo"><a href="/index.html">Florind<span class="green-text">ON</span> </a></h2>
+                </div>
+                <div class="w3-col m4">
+                    <input type="text" class="search-bar" placeholder="Pesquisar...">
+                </div>
+                <div class="w3-col m4 w3-center">
+                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round-xxlarge">
+                        <i class='fas fa-user-alt' style='font-size:20px'></i>
+                    </button>
+                    <button class="w3-button w3-round-xxlarge"><i class='fas fa-heart' style='font-size:20px'></i></button>
+                    <button class="w3-button w3-round-xxlarge"><i class='fas fa-shopping-cart' style='font-size:20px'></i></button>
+                    
+                    
+                </div>
+            </div>
+            <!-- Segunda linha do cabeçalho -->
+            <div class="w3-bar w3-row w3-center">
+                <div class="w3-col w3-row w3-center">
+                    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/index.html">HOME</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/HTML/catalogo.html">CATÁLOGO</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/HTML/fornecedores.html">FORNECEDORES</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/HTML/sobrenos.html">SOBRE NÓS</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/HTML/faq.html">FAQ</a>
+                    <div class="w3-dropdown-hover w3-mobile w3-round-xxlarge w3-hide-small">
+                        <button title="IDIOMAS" class="w3-button w3-hover-light-gray w3-round-xxlarge w3-mobile">IDIOMAS <i class="fa fa-caret-down"></i></button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                          <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Português - PT</a>
+                          <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Inglês - EN</a>
+                          <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Espanhol - ES</a>
+                          <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Francês - FR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+                <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
+                <a href="/HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
+                <a href="/HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
+                <a href="/HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
+                <a href="/HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
+            </div>
+        </div>
+        <!-- Fim do cabeçalho -->
+      
+
+        <!-- MODAL LOGIN -->
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+                <div class="w3-center"><br>
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                        class="w3-button w3-xlarge w3-hover-red w3-display-topright"
+                        title="Close Modal">&times;</span>
+                </div>
+
+                <form class="w3-container" action="/action_page.php">
+                    <div class="w3-section">
+                        <label><b>Usuário</b></label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" name="usrname"
+                            required>
+                        <label><b>Senha</b></label>
+                        <input class="w3-input w3-border" type="password" name="psw" required>
+                        <button class="w3-button w3-block w3-green w3-section w3-padding"
+                            type="submit">Login</button>
+                        <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Lembrar
+                        esse usuário
+                    </div>
+                </form>
+
+                <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button onclick="document.getElementById('id01').style.display='none'" type="button"
+                        class="w3-button w3-red">Cancelar</button>
+                    <span class="w3-right w3-padding w3-hide-small">Esqueci <a href="#">senha</a></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Ícones de contraste e aumento de fonte -->
+    <div class="w3-container"></div>
+        <div class="contrast-font-icons">
+            <button onclick="changeContrast()" class="w3-button w3-round-xxlarge">
+                <span class="material-icons" style="font-size:30px;">brightness_6</span>
+            </button>
+            <button onclick="increaseFontSize()" class="w3-button w3-round-xxlarge">
+                <span class="material-icons" style="font-size:30px;">format_size</span>
+            </button>
+        </div>
+
+        <!-- TESTANDO O MODAL CHATBOT-->
+        <div class="chatbot-container" onclick="openChatModal()">
+            <img src="/IMG/mascote.png" alt="Chatbot" class="chatbot-image">
+        </div>
+
+        <div id="chatModal" class="chat-modal">
+            <div class="chat-modal-content">
+                <p>Olá! Posso ajudar?</p>
+                <p>1 - Como comprar</p>
+                <p>2 - Sobre pagamentos</p>
+                <p>3 - Conheça nossa história</p>
+                <p>4 - FAQ</p>
+                <input class="w3-input w3-border w3-margin-bottom" type="text" name="resposta"
+                                        required>
+                <span class="close" onclick="closeChatModal()">&times;</span>
+            </div>
+        </div>
+        <br>
+        <p class="w3-center"><i>"🌺 Descubra a beleza das flores tropicais com a FlorindON! Explore, escolha e celebre a vida em harmonia com a natureza. </i></p>
+        <p class="w3-center"><i> Obrigado por fazer parte desta jornada sustentável conosco. 🌺"</i></p>
+        <br>
+        <h1 class="w3-center"><b>FAQ - PERGUNTAS FREQUENTES</b></h1>
+        <div class="w3-container w3-padding-32"> 
+            <br>
+            <h1 class="w3-center"> 1 - Como posso acompanhar o status da minha encomenda?</h1>
+            <br>
+            <p class="w3-center">Você pode acompanhar o status da sua encomenda acessando a área "Minha Conta" no nosso site. Lá você encontrará informações atualizadas sobre o processamento, envio e entrega da sua encomenda. </p>
+            <br>
+            <h1 class="w3-center"> 2 - Como posso escolher a flor tropical certa para uma ocasião específica?</h1>
+            <br>
+            <p class="w3-center">Nossa equipe de especialistas está disponível para ajudá-lo a escolher a flor tropical perfeita para a ocasião desejada. Você pode entrar em contato conosco através do e-mail, Instagram e telefone, teremos prazer em fornecer recomendações personalizadas com base nas suas necessidades.</p>   
+            <br>
+            <h1 class="w3-center"> 3 - É possível enviar uma mensagem personalizada junto com a flor?</h1>
+            <br>
+            <p class="w3-center">Sim, oferecemos a opção de enviar uma mensagem personalizada junto com a sua flor tropical. Durante o processo de compra, você poderá adicionar uma mensagem especial que será incluída no arranjo ou no cartão que acompanha a flor. </p>
+            <br>
+            <h1 class="w3-center"> 4 - Posso personalizar um arranjo de acordo com minha preferência?</h1>
+            <br>
+            <p class="w3-center">Sim, você pode personalizar um arranjo de acordo com as suas preferências. Entre em contato conosco e informe-nos sobre as suas preferências, como cores e estilo desejado. Faremos o possível para criar um arranjo exclusivo que atenda às suas expectativas.</p>
+            <br>
+            <h1 class="w3-center"> 5 - Como manter as flores tropicais frescas por mais tempo?
+            </h1>
+            <br>
+            <p class="w3-center">Para manter suas flores tropicais frescas por mais tempo, recomendamos mantê-las em local fresco, longe da luz direta do sol e de correntes de ar. Certifique-se de trocar a água regularmente, cortar as hastes diagonalmente e remover quaisquer folhas submersas. Siga as instruções de cuidados que acompanham o arranjo para obter melhores resultados. </p>
+            <br>
+            <h1 class="w3-center"> 6 - Qual o prazo de entrega?</h1>
+            <br>
+            <p class="w3-center">O prazo de entrega varia dependendo da sua localização e das opções de envio selecionadas. Durante o processo de compra, você poderá ver as opções de entrega disponíveis e os prazos estimados para cada uma delas.</p>
+            <br>
+            <h1 class="w3-center"> 7 - Oferecem garantia de qualidade nas flores tropicais entregues?</h1>
+            <br>
+            <p class="w3-center">Sim, nos preocupamos com a qualidade das flores tropicais que entregamos. Se por algum motivo você não estiver satisfeito com a qualidade das flores recebidas, entre em contato conosco imediatamente para que possamos resolver a situação e encontrar uma solução adequada.</p>
+            <br>
+            <h1 class="w3-center"> 8 - O que devo fazer se as flores chegarem danificadas?</h1>
+            <br>
+            <p class="w3-center">Se as flores chegarem danificadas, pedimos que entre em contato conosco o mais rápido possível. Solicitaremos fotos das flores danificadas para avaliação e providenciaremos um reembolso ou um novo envio, de acordo com a situação. </p>
+            <br>
+            <h1 class="w3-center"> 9 - Oferecem descontos para compras em grande quantidade?</h1>
+            <br>
+            <p class="w3-center">Sim, oferecemos descontos especiais para compras em grande quantidade de flores tropicais. Entre em contato conosco para discutir suas necessidades e requisitos específicos, e teremos prazer em fornecer uma cotação personalizada com preços especiais.</p>
+        </div>
+        <br>
+        <br>
+    </div>
+    <!--Inicio do Rodapé do SITE-->
+    <footer class="w3-gray w3-row">
+        <div class="w3-container w3-center">
+            <br>
+            <br>
+            <div class="grid-item w3-col m4">
+                <h2><b>Serviços</b></h2>
+                <p><b>Encontre um fornecedor</b></p>
+                <p><b>FlorindON Giftcard</b></p>
+                <p><b>Arranjo Personalizado</b></p>
+                <p><b>Encomenda Internacional</b></p>
+                <p><b>Perguntas Frequentes</b></p>
+                <p><b>Termos e Condições</b></p>
+            </div>
+
+            <div class="grid-item w3-col m4 ">
+                <h2><b>Institucional</b></h2>
+                <p><b>Estr. Alfred Nobel, 850 - Aldeia dos Camarás</b></p>
+                <p><b>Aldeia, PE - Brasil</b></p>
+                <p><b>CEP: 54902-310</b></p>
+                <p><b>LTDA - 05.774.200/0004-05</b></p>
+                <p><b>Trabalhe Conosco!</b></p> 
+            </div>
+
+            <div class="grid-item w3-col m4 w3-center">
+                <h2><b>Redes Sociais FlorindON</b></h2>
+                <i class='social fa fa-facebook'></i>
+                <i class='social fa fa-instagram'></i>
+                <i class='social fa fa-rss'></i>
+                <br>
+                <i class='social fa fa-google'></i>
+                <i class='social fa fa-telegram'></i>
+                <i class='social fa fa-wordpress'></i>
+                <h4><b>contato@florindon.com</b></h4>
+            </div>
+        </div>
+    
+    </footer>
+    <script src="/JS/js.js"></script>
+    <script>
+        // Script for side navigation
+        function w3_open() {
+          var x = document.getElementById("mySidebar");
+          x.style.width = "300px";
+          x.style.paddingTop = "10%";
+          x.style.display = "block";
+        }
+        
+        // Close side navigation
+        function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
+  
+</body>
+
+</html>

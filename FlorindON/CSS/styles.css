@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para os ícones de contraste e tamanho de fonte */
+.contrast-font-icons {
+    position: fixed;
+    left: 10px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 100px;
+    width: 75%;
+    height: 30px;
+}
+
+/* Estilo a mudança de contraste */
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estilo do modal ChatBot */
+.chatbot-container {
+
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    
+    display: inline-block;
+    cursor: pointer;
+}
+
+.chatbot-image {
+    width: 200px;
+    height: 250px;
+}
+
+.chat-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.chat-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+
+/* Estilo do Rodapé do site */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+}
+
+.grid-item {
+    font-family: "Roboto";
+}
+
+.social {
+    font-size: 5em;
+    padding: 10px
+}
+
+/* Estilo do NAVBAR do site */
+.w3-bar {
+    display: flex;
+    justify-content: center;
+}
+.w3-bar-item {
+    margin: 0 10px;
+}
+
+/* Estilo do nome FLORINDON */
+.nomelogo {
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+}
+.green-text {
+    color: rgb(8, 98, 8);
+    letter-spacing: 2px;
+}
+
+
+.thick-hr {
+    height: 0.5px; /* Ajuste o valor conforme necessário */
+    border: none;
+    background-color: black; /* Ajuste a cor conforme necessário */
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+h2.nomelogo a {
+    text-decoration: none;
+}
+
+
+.w3-dropdown-content i {
+    margin-right: 10px;
+}
+
+

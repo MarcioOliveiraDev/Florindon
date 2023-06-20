@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FlorindON -> Catálogo</title>
+    <link rel="icon" href="../IMG/favicon-flor2-removebg-preview-teste.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+
+    <script src="https://kit.fontawesome.com/ffbf04e18f.js" crossorigin="anonymous"></script>
+    <script src="../carrinho.js"></script>
+</head>
+
+<!--INICIO DA  DIV CONTAINER QUE ABRIGA O CABEÇALHO-->
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+        <i class="fa fa-remove"></i>
+    </a>
+    <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="../HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
+    <a href="../HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
+    <a href="../HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
+    <a href="../HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
+    <a href="#" class="w3-bar-item w3-button">IDIOMAS</a>
+</nav>
+
+<!--INICIO DA  DIV CONTAINER QUE ABRIGA O CABEÇALHO-->
+<div class="w3-container">
+    <!-- Início do cabeçalho -->
+    <div class="w3-win8-orange w3-center">
+        <!-- Primeira linha do cabeçalho -->
+        <div class="w3-row  w3-xlarge  w3-center">
+            <div class="w3-col m4 w3-center">
+                <!--<img class="logo" src="IMG/novoLogo.png" alt="FlorindON">-->
+                <h2 class="nomelogo"><a href="../index.html">Florind<span class="green-text">ON</span> </a></h2>
+            </div>
+            <div class="w3-col m4">
+                <input type="text" id="search-item" class="search-bar" placeholder="Pesquisar..." onkeyup="search()">
+            </div>
+            <div class="w3-col m4 w3-center">
+                <button onclick="document.getElementById('id01').style.display='block'"
+                    class="w3-button w3-round-xxlarge">
+                    <i class='fas fa-user-alt' style='font-size:20px'></i>
+                </button>
+                <button class="w3-button w3-round-xxlarge"><i class='fas fa-heart' style='font-size:20px'></i></button>
+                <button class="w3-button w3-round-xxlarge"><i class='fas fa-shopping-cart'
+                        style='font-size:20px'></i></button>
+
+
+            </div>
+        </div>
+        <!-- Segunda linha do cabeçalho -->
+        <div class="w3-bar w3-row w3-center">
+            <div class="w3-col w3-row w3-center">
+                <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+                    href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="../index.html">HOME</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                    href="../HTML/catalogo.html">CATÁLOGO</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                    href="..HTML/fornecedores.html">FORNECEDORES</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                    href="../HTML/sobrenos.html">SOBRE NÓS</a>
+                <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                    href="../HTML/faq.html">FAQ</a>
+                <div class="w3-dropdown-hover w3-mobile w3-round-xxlarge w3-hide-small">
+                    <button title="IDIOMAS" class="w3-button w3-hover-light-gray w3-round-xxlarge w3-mobile">IDIOMAS
+                        <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Português -
+                            PT</a>
+                        <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Inglês -
+                            EN</a>
+                        <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Espanhol -
+                            ES</a>
+                        <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Francês -
+                            FR</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+            <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="../HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
+            <a href="../HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
+            <a href="../HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
+            <a href="../HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
+        </div>
+    </div>
+    <!-- Fim do cabeçalho -->
+
+    <!-- MODAL LOGIN -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+            <div class="w3-center"><br>
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+            </div>
+
+            <form class="w3-container" action="/action_page.php">
+                <div class="w3-section">
+                    <label><b>Usuário</b></label>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" name="usrname" required>
+                    <label><b>Senha</b></label>
+                    <input class="w3-input w3-border" type="password" name="psw" required>
+                    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+                    <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Lembrar
+                    esse usuário
+                </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <button onclick="document.getElementById('id01').style.display='none'" type="button"
+                    class="w3-button w3-red">Cancelar</button>
+                <span class="w3-right w3-padding w3-hide-small">Esqueci <a href="#">senha</a></span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Ícones de contraste e aumento de fonte -->
+<div class="w3-container">
+    <div class="contrast-font-icons">
+        <button onclick="changeContrast()" class="w3-button w3-round-xxlarge">
+            <span class="material-icons" style="font-size:30px;">brightness_6</span>
+        </button>
+        <button onclick="increaseFontSize()" class="w3-button w3-round-xxlarge">
+            <span class="material-icons" style="font-size:30px;">format_size</span>
+        </button>
+    </div>
+
+    <!-- TESTANDO O MODAL CHATBOT-->
+    <div class="chatbot-container" onclick="openChatModal()">
+        <img src="../IMG/mascote.png" alt="Chatbot" class="chatbot-image">
+    </div>
+
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <p>Olá! Posso ajudar?</p>
+            <p>1 - Como comprar</p>
+            <p>2 - Sobre pagamentos</p>
+            <p>3 - Conheça nossa história</p>
+            <p>4 - FAQ</p>
+            <input class="w3-input w3-border w3-margin-bottom" type="text" name="resposta" required>
+            <button class="close" onclick="closeChatModal()">Cancelar</button>
+        </div>
+    </div>
+    <br>
+
+
+</div>
+
+<body>
+    <div class="card-container-carrinho">
+        <div class="card-carrinho">
+            <h3 class="card-heading-carrinho"></h3>
+            <p class="card-body-carrinho"></p>
+            <p class="card-img-carrinho"></p>
+        </div>
+    </div>
+
+
+    <div>
+        <div class="w3-card lista-produtos">
+            <div class="adicionar-produtos">
+                <label for="adicionar-produtos">Adicione um Produto</label>
+                <select name="adicionar-produtos" id="adicionarProdutos">
+                    <option value="alpinias">Alpínias</option>
+                    <option value="heliconia">Heliconia Sterlitzia</option>
+                    <option value="bromelias">Bromélias</option>
+                    <option value="orquidea">Orquídea</option>
+                    <option value="ciposino">Cipó-de-Sino</option>
+                    <option value="camelia">Camelia</option>
+                    <option value="hibisco">Hibisco</option>
+                    <option value="maranta">Maranta</option>
+                    <option value="anturio">Antúrio</option>
+                    <option value="belezatropical">Beleza Tropical</option>
+                    <option value="cestoflores">Cesto de Flores</option>
+                    <option value="buquetropical">Buquê Tropical</option>
+                    <option value="folhagem">Folhagem</option>
+                    <option value="folhagem2">Folhagem 2</option>
+                    <option value="folhagem3">Folhagem 3</option>
+                </select>
+                <button class="w3-button botao-cor" type="button">Adicionar</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>FlorindON -> Fornecedores</title>
-    <link rel="icon" href="../IMG/favicon-flor2-removebg-preview-teste.ico" type="image/x-icon">
+    <title>FlorindON</title>
+    <link rel="icon" href="/IMG/favicon-flor2-removebg-preview-teste.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,20 +13,12 @@
     <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ffbf04e18f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-
-
-
-    <script src="https://kit.fontawesome.com/ffbf04e18f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-
-
-
-    <!--INICIO DA  DIV CONTAINER QUE ABRIGA O CABEÇALHO-->
     <!-- Sidebar on click -->
     <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
         id="mySidebar">
@@ -50,18 +42,18 @@
             <div class="w3-row  w3-xlarge  w3-center">
                 <div class="w3-col m4 w3-center">
                     <!--<img class="logo" src="IMG/novoLogo.png" alt="FlorindON">-->
-                    <h2 class="nomelogo"><a href="../index.html">Florind<span class="green-text">ON</span> </a></h2>
+                    <h2 class="nomelogo"><a href="./index.html">Florind<span class="green-text">ON</span> </a></h2>
                 </div>
                 <div class="w3-col m4">
                     <input type="text" class="search-bar" placeholder="Pesquisar...">
                 </div>
                 <div class="w3-col m4 w3-center">
-                    <button onclick="document.getElementById('id01').style.display='block'"
+                    <button onclick="document.getElementById('modalLogin').style.display='block'"
                         class="w3-button w3-round-xxlarge">
                         <i class='fas fa-user-alt' style='font-size:20px'></i>
                     </button>
-                    <button class="w3-button w3-round-xxlarge" onclick="location.href='catalogo.html'"><i
-                            class='fas fa-shopping-cart' style='font-size:20px'></i></button>
+                    <button class="w3-button w3-round-xxlarge" onclick="location.href='catalogo.html'"
+                        type="button"><i class='fas fa-shopping-cart' style='font-size:20px'></i></button>
 
 
                 </div>
@@ -71,16 +63,14 @@
                 <div class="w3-col w3-row w3-center">
                     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
                         href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="index.html">HOME</a>
                     <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
-                        href="../index.html">HOME</a>
+                        href="catalogo.html">CATÁLOGO</a>
                     <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
-                        href="../HTML/catalogo.html">CATÁLOGO</a>
-                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
-                        href="../HTML/fornecedores.html">FORNECEDORES</a>
-                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
-                        href="../HTML/sobrenos.html">SOBRE NÓS</a>
-                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
-                        href="../HTML/faq.html">FAQ</a>
+                        href="fornecedores.html">FORNECEDORES</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="sobrenos.html">SOBRE
+                        NÓS</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="faq.html">FAQ</a>
                     <div class="w3-dropdown-hover w3-mobile w3-round-xxlarge w3-hide-small">
                         <button title="IDIOMAS" class="w3-button w3-hover-light-gray w3-round-xxlarge w3-mobile">IDIOMAS
                             <i class="fa fa-caret-down"></i></button>
@@ -99,21 +89,21 @@
             </div>
             <!-- Navbar on small screens -->
             <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-                <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
-                <a href="/HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
-                <a href="/HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
-                <a href="/HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
-                <a href="/HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
+                <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+                <a href="catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
+                <a href="fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
+                <a href="sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
+                <a href="faq.html" class="w3-bar-item w3-button">FAQ</a>
             </div>
         </div>
         <!-- Fim do cabeçalho -->
 
         <!-- MODAL LOGIN -->
-        <div id="id01" class="w3-modal">
+        <div id="modalLogin" class="w3-modal">
             <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
 
                 <div class="w3-center"><br>
-                    <span onclick="document.getElementById('id01').style.display='none'"
+                    <span onclick="document.getElementById('modalLogin').style.display='none'"
                         class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
                 </div>
 
@@ -139,6 +129,7 @@
                             fornecedor</a></span>
                     <span class="w3-right w3-padding w3-hide-small">Esqueci a <a href="#">senha</a></span>
                 </div>
+
             </div>
         </div>
     </div>
@@ -154,113 +145,102 @@
             </button>
         </div>
 
-        <!-- TESTANDO O MODAL CHATBOT-->
-        <div class="chatbot-container" onclick="openChatModal()">
-            <img src="IMG/mascote.png" alt="Chatbot" class="chatbot-image">
-        </div>
 
-        <div id="chatModal" class="chat-modal">
-            <div class="chat-modal-content">
-                <img src="../IMG/mascote.png" alt="Chatbot" class="chatbot-image">
-                <p>Olá! Posso ajudar?</p>
-                <p>1 - Como posso acompanhar o status da minha encomenda?</p>
-                <p>2 - Como posso escolher a flor tropical certa para uma ocasião específica?</p>
-                <p>3 - É possível enviar uma mensagem personalizada junto com a flor?</p>
-                <p>4 - Posso personalizar um arranjo de acordo com minha preferência?</p>
-                <p>5 - Como manter as flores tropicais frescas por mais tempo?</p>
-                <p>6 - Qual o prazo de entrega?</p>
-                <p>7 - Oferecem garantia de qualidade nas flores tropicais entregues?</p>
-                <p>8 - O que devo fazer se as flores chegarem danificadas?</p>
-                <p>9 - Oferecem descontos para compras em grande quantidade?</p>
-                <input class="w3-input w3-border w3-margin-bottom" id="userBox" type="text" name="resposta" required>
-                <p id="chatLog"></p>
-                <button class="w3-button botao-cor-bot" onclick="talk()">Enviar</button>
-                <button class="w3-button botao-cor-bot" onclick="closeChatModal()">Cancelar</button>
+        </head>
+
+
+        <form>
+            <div class="container-cadastro">
+                <h1>Cadastro</h1>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Digite o Email" name="email" class="input-login" id="email" required>
+
+                <label for="user"><b>Usuário</b></label>
+                <input type="text" placeholder="Digite o Nome de Usuário" name="user" class="input-login" id="user"
+                    required>
+
+                <label for="psw-repeat"><b>Senha</b></label>
+                <input type="password" placeholder="Digite a Senha" name="psw" class="input-login" id="psw" required>
+                <hr>
+
+                <button type="button" class="registerbtn"
+                    onclick="validarCadastro();location.href='../index.html'">Cadastrar</button>
             </div>
+
+    </div>
+    </form>
+</body>
+
+<footer class="w3-gray w3-row">
+    <div class="w3-container w3-center">
+        <br>
+        <br>
+        <div class="grid-item w3-col m4">
+            <h2><b>Serviços</b></h2>
+            <p><b>Encontre um fornecedor</b></p>
+            <p><b>FlorindON Giftcard</b></p>
+            <p><b>Arranjo Personalizado</b></p>
+            <p><b>Encomenda Internacional</b></p>
+            <p><b>Perguntas Frequentes</b></p>
+            <p><b>Termos e Condições</b></p>
         </div>
 
-        <br>
-        <p class="w3-center"><i>"🌺 Descubra a beleza das flores tropicais com a FlorindON! Explore, escolha e celebre a
-                vida em harmonia com a natureza. </i></p>
-        <p class="w3-center"><i> Obrigado por fazer parte desta jornada sustentável conosco. 🌺"</i></p>
-        <br>
-        <h1 class="w3-center"><b>FORNECEDORES</b></h1>
-        <br>
-
-        <br>
-        <div class="w3-card w3-center">
-            <img src="../IMG/dashboard.jpg" style="width:75%; height: 75%;">
+        <div class="grid-item w3-col m4 ">
+            <h2><b>Institucional</b></h2>
+            <p><b>Estr. Alfred Nobel, 850 - Aldeia dos Camarás</b></p>
+            <p><b>Aldeia, PE - Brasil</b></p>
+            <p><b>CEP: 54902-310</b></p>
+            <p><b>LTDA - 05.774.200/0004-05</b></p>
+            <p><b>Trabalhe Conosco!</b></p>
 
 
         </div>
-        <br>
-        <br>
+
+
+
+        <div class="grid-item w3-col m4 w3-center">
+            <h2><b>Redes Sociais FlorindON</b></h2>
+            <i class='social fa fa-facebook'></i>
+            <i class='social fa fa-instagram'></i>
+            <i class='social fa fa-rss'></i>
+            <br>
+            <i class='social fa fa-google'></i>
+            <i class='social fa fa-telegram'></i>
+            <i class='social fa fa-wordpress'></i>
+            <h4><b>contato@florindon.com</b></h4>
+        </div>
     </div>
 
-    <!--Inicio do Rodapé do SITE-->
-    <footer class="w3-gray w3-row">
-        <div class="w3-container w3-center">
-            <br>
-            <br>
-            <div class="grid-item w3-col m4">
-                <h2><b>Serviços</b></h2>
-                <p><b>Encontre um fornecedor</b></p>
-                <p><b>FlorindON Giftcard</b></p>
-                <p><b>Arranjo Personalizado</b></p>
-                <p><b>Encomenda Internacional</b></p>
-                <p><b>Perguntas Frequentes</b></p>
-                <p><b>Termos e Condições</b></p>
-            </div>
+</footer>
 
-            <div class="grid-item w3-col m4 ">
-                <h2><b>Institucional</b></h2>
-                <p><b>Estr. Alfred Nobel, 850 - Aldeia dos Camarás</b></p>
-                <p><b>Aldeia, PE - Brasil</b></p>
-                <p><b>CEP: 54902-310</b></p>
-                <p><b>LTDA - 05.774.200/0004-05</b></p>
-                <p><b>Trabalhe Conosco!</b></p>
-            </div>
 
-            <div class="grid-item w3-col m4 w3-center">
-                <h2><b>Redes Sociais FlorindON</b></h2>
-                <i class='social fa fa-facebook'></i>
-                <i class='social fa fa-instagram'></i>
-                <i class='social fa fa-rss'></i>
-                <br>
-                <i class='social fa fa-google'></i>
-                <i class='social fa fa-telegram'></i>
-                <i class='social fa fa-wordpress'></i>
-                <h4><b>contato@florindon.com</b></h4>
-            </div>
-        </div>
+<script src="../JS/js.js"></script>
+<script>
+    // Script for side navigation
+    function w3_open() {
+        var x = document.getElementById("mySidebar");
+        x.style.width = "300px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+    }
 
-    </footer>
-    <script src="../JS/js.js"></script>
-    <script>
-        // Script for side navigation
-        function w3_open() {
-            var x = document.getElementById("mySidebar");
-            x.style.width = "300px";
-            x.style.paddingTop = "10%";
-            x.style.display = "block";
+    // Close side navigation
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // Used to toggle the menu on smaller screens when clicking on the menu button
+    function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
         }
+    }
+</script>
 
-        // Close side navigation
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-
-        // Used to toggle the menu on smaller screens when clicking on the menu button
-        function openNav() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-    </script>
-
-</body>
 
 </html>

@@ -123,4 +123,162 @@ h2.nomelogo a {
     margin-right: 10px;
 }
 
+.hide {
+    display:none;
+}
 
+.botao-login-cor {
+    background-color: rgb(26,100,8);
+    color:white;
+}
+
+.lista-produtos{
+    padding:1rem;
+    margin-top:3rem;
+    margin-left: 5rem;
+    max-width: min-content;
+}
+
+.product-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding:.8rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.product-price{
+    text-align: center;
+}
+
+.cart-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin:5rem
+  }
+
+.table-head-item {
+    text-align: start;
+    border-bottom: 1px solid gray;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+  }
+  
+  .second-col,
+  .third-col {
+    width: 26%;
+  }
+  
+  .cart-product td {
+    padding: 8px 0;
+  }
+  
+  .product-identification {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-product-image {
+    width: 120px;
+    height: 70px;
+  }
+  
+  .cart-product-title {
+    margin-left: 16px;
+    font-size: 18px;
+  }
+  
+  .cart-product-price {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .product-qtd-input {
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    text-align: center;
+    background: #eee;
+  }
+  
+  .remove-product-button {
+    margin-left: 12px;
+    background: rgba(250,104,0,255);
+    color: white;
+    padding: 10px 8px;
+    border: 0;
+    border-radius: 6px;
+  
+    transition: filter 0.2s;
+  }
+  
+  .remove-product-button:hover {
+    filter: brightness(0.8);
+  }
+  
+  .cart-total-container {
+    border-top: 1px solid gray;
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+  }
+  
+  .cart-total-container strong {
+    margin-right: 12px;
+  }
+  
+  .purchase-button {
+    display: flex;
+    margin: 24px auto 0;
+    background: rgb(26,100,8);
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+  
+    transition: filter 0.2s;
+  }
+  
+.botao-cor-bot{
+    background: rgb(26,100,8);
+    color: white;
+}
+
+
+.container-cadastro{
+    text-align: center;
+    padding: 2rem;
+}
+
+.input-login{
+    
+    width: 30%;
+    padding: 15px;
+    margin: auto;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+.registerbtn {
+    background-color: rgb(26, 100, 8);
+    color: white;
+    padding: 16px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}

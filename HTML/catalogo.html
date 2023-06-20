@@ -3,21 +3,18 @@
 
 <head>
     <title>FlorindON -> Catálogo</title>
-    <link rel="icon" href="/IMG/favicon-flor2-removebg-preview-teste.ico" type="image/x-icon">
+    <link rel="icon" href="../IMG/favicon-flor2-removebg-preview-teste.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
-    <link rel="stylesheet" type="text/css" href="/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-
-
-
+    <script src="../JS/js.js"></script>
     <script src="https://kit.fontawesome.com/ffbf04e18f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -28,15 +25,17 @@
 
     <!--INICIO DA  DIV CONTAINER QUE ABRIGA O CABEÇALHO-->
     <!-- Sidebar on click -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
-        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
-        <i class="fa fa-remove"></i>
+    <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+        id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+            <i class="fa fa-remove"></i>
         </a>
-        <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-        <a href="/HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
-        <a href="/HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
-        <a href="/HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
-        <a href="/HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
+        <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="../HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
+        <a href="../HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
+        <a href="../HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
+        <a href="../HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
         <a href="#" class="w3-bar-item w3-button">IDIOMAS</a>
     </nav>
 
@@ -48,48 +47,61 @@
             <div class="w3-row  w3-xlarge  w3-center">
                 <div class="w3-col m4 w3-center">
                     <!--<img class="logo" src="IMG/novoLogo.png" alt="FlorindON">-->
-                    <h2 class="nomelogo"><a href="/index.html">Florind<span class="green-text">ON</span> </a></h2>
+                    <h2 class="nomelogo"><a href="../index.html">Florind<span class="green-text">ON</span> </a></h2>
                 </div>
                 <div class="w3-col m4">
-                    <input type="text" class="search-bar" placeholder="Pesquisar...">
+                    <input type="text" id="search-item" class="search-bar" placeholder="Pesquisar..."
+                        onkeyup="search()">
                 </div>
                 <div class="w3-col m4 w3-center">
-                    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round-xxlarge">
+                    <button onclick="document.getElementById('id01').style.display='block'"
+                        class="w3-button w3-round-xxlarge">
                         <i class='fas fa-user-alt' style='font-size:20px'></i>
                     </button>
-                    <button class="w3-button w3-round-xxlarge"><i class='fas fa-heart' style='font-size:20px'></i></button>
-                    <button class="w3-button w3-round-xxlarge"><i class='fas fa-shopping-cart' style='font-size:20px'></i></button>
-                    
-                    
+                    <button class="w3-button w3-round-xxlarge"><i class='fas fa-shopping-cart'
+                            style='font-size:20px'></i></button>
+
+
                 </div>
             </div>
             <!-- Segunda linha do cabeçalho -->
             <div class="w3-bar w3-row w3-center">
                 <div class="w3-col w3-row w3-center">
-                    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/index.html">HOME</a>
-                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/HTML/catalogo.html">CATÁLOGO</a>
-                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/HTML/fornecedores.html">FORNECEDORES</a>
-                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/HTML/sobrenos.html">SOBRE NÓS</a>
-                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small" href="/HTML/faq.html">FAQ</a>
+                    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+                        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                        href="../index.html">HOME</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                        href="../HTML/catalogo.html">CATÁLOGO</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                        href="../HTML/fornecedores.html">FORNECEDORES</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                        href="../HTML/sobrenos.html">SOBRE NÓS</a>
+                    <a class="w3-bar-item w3-button w3-mobile w3-round-xxlarge w3-hide-small"
+                        href="../HTML/faq.html">FAQ</a>
                     <div class="w3-dropdown-hover w3-mobile w3-round-xxlarge w3-hide-small">
-                        <button title="IDIOMAS" class="w3-button w3-hover-light-gray w3-round-xxlarge w3-mobile">IDIOMAS <i class="fa fa-caret-down"></i></button>
+                        <button title="IDIOMAS" class="w3-button w3-hover-light-gray w3-round-xxlarge w3-mobile">IDIOMAS
+                            <i class="fa fa-caret-down"></i></button>
                         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                          <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Português - PT</a>
-                          <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Inglês - EN</a>
-                          <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Espanhol - ES</a>
-                          <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Francês - FR</a>
+                            <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Português -
+                                PT</a>
+                            <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Inglês -
+                                EN</a>
+                            <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Espanhol -
+                                ES</a>
+                            <a href="#" class="w3-bar-item w3-button"><i class="fas fa-globe-americas"></i> Francês -
+                                FR</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Navbar on small screens -->
             <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-                <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
-                <a href="/HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
-                <a href="/HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
-                <a href="/HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
-                <a href="/HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
+                <a href="../index.html" class="w3-bar-item w3-button">HOME</a>
+                <a href="../HTML/catalogo.html" class="w3-bar-item w3-button">CATÁLOGO</a>
+                <a href="../HTML/fornecedores.html" class="w3-bar-item w3-button">FORNECEDORES</a>
+                <a href="../HTML/sobrenos.html" class="w3-bar-item w3-button">SOBRE NÓS</a>
+                <a href="../HTML/faq.html" class="w3-bar-item w3-button">FAQ</a>
             </div>
         </div>
         <!-- Fim do cabeçalho -->
@@ -100,18 +112,16 @@
 
                 <div class="w3-center"><br>
                     <span onclick="document.getElementById('id01').style.display='none'"
-                        class="w3-button w3-xlarge w3-hover-red w3-display-topright"
-                        title="Close Modal">&times;</span>
+                        class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
                 </div>
 
-                <form class="w3-container" action="/action_page.php">
+                <form class="w3-container">
                     <div class="w3-section">
                         <label><b>Usuário</b></label>
-                        <input class="w3-input w3-border w3-margin-bottom" type="text" name="usrname"
-                            required>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" name="usrname" required>
                         <label><b>Senha</b></label>
                         <input class="w3-input w3-border" type="password" name="psw" required>
-                        <button class="w3-button w3-block w3-green w3-section w3-padding"
+                        <button class="w3-button w3-block w3-section w3-padding botao-login-cor"
                             type="submit">Login</button>
                         <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Lembrar
                         esse usuário
@@ -119,9 +129,13 @@
                 </form>
 
                 <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
-                    <button onclick="document.getElementById('id01').style.display='none'" type="button"
+                    <button onclick="document.getElementById('modalLogin').style.display='none'" type="button"
                         class="w3-button w3-red">Cancelar</button>
-                    <span class="w3-right w3-padding w3-hide-small">Esqueci <a href="#">senha</a></span>
+                    <span class="w3-right w3-padding w3-hide-small"><a href="cadastro.html">Cadastro de
+                            usuário</a></span>
+                    <span class="w3-right w3-padding w3-hide-small"><a href="cadastrofornecedor.html">Cadastro de
+                            fornecedor</a></span>
+                    <span class="w3-right w3-padding w3-hide-small">Esqueci a <a href="#">senha</a></span>
                 </div>
 
             </div>
@@ -138,198 +152,286 @@
                 <span class="material-icons" style="font-size:30px;">format_size</span>
             </button>
         </div>
-
-        <!-- TESTANDO O MODAL CHATBOT-->
-        <div class="chatbot-container" onclick="openChatModal()">
-            <img src="/IMG/mascote.png" alt="Chatbot" class="chatbot-image">
-        </div>
-
-        <div id="chatModal" class="chat-modal">
-            <div class="chat-modal-content">
-                <p>Olá! Posso ajudar?</p>
-                <p>1 - Como comprar</p>
-                <p>2 - Sobre pagamentos</p>
-                <p>3 - Conheça nossa história</p>
-                <p>4 - FAQ</p>
-                <input class="w3-input w3-border w3-margin-bottom" type="text" name="resposta"
-                                        required>
-                <span class="close" onclick="closeChatModal()">&times;</span>
-            </div>
-        </div>
-        <br>
-        <p class="w3-center"><i>"🌺 Descubra a beleza das flores tropicais com a FlorindON! Explore, escolha e celebre a vida em harmonia com a natureza. </i></p>
-        <p class="w3-center"><i> Obrigado por fazer parte desta jornada sustentável conosco. 🌺"</i></p>
-        
-
-        <br>
-        <h1 class="w3-center"><b>FLORES TROPICAIS</b></h1>
-        <br>
-        <div class="w3-row-padding w3-margin-top">
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/Alpinia-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Alpínias</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/Heliconia-Strelitzia-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Heliconia Sterlitzia</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/bromelia-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Bromélias</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <div class="w3-row-padding w3-margin-top">
-            <div class="w3-third ">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/Orquidea-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Orquídea</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/Cipo-sino-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Cipó-de-Sino</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/Camelia-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Camelia</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="w3-row-padding w3-margin-top">
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/hibisco-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Hibisco</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/Maranta-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Maranta</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/anturio-AI.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Antúrio</b></h5>
-                        <p class="w3-center">R$ 20,00</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <br>
-
-        <h1 class="w3-center"><b>BUQUÊS E VASOS</b></h1>
-        <br>
-        <div class="w3-row-padding w3-margin-top">
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/Buque-tropical-1.jpg" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Beleza Tropical</b></h5>
-                        <p class="w3-center">R$ 50,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/cesto-flores-tropical.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Cesto de Flores</b></h5>
-                        <p class="w3-center">R$ 100,00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="w3-third">
-                <div class="w3-card w3-hover-opacity">
-                    <img src="/IMG/Buque-tropical.jfif" style="width:100%; height: 350px;">
-                    <div class="w3-container">
-                        <h5 class="w3-center"><b>Buquê Tropical</b></h5>
-                        <p class="w3-center">R$ 50,00</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <br>
-        <br>
-
-        <h1 class="w3-center"><b>FOLHAGENS</b></h1>
-            <br>
-            <div class="w3-row-padding w3-margin-top">
-                <div class="w3-third">
-                    <div class="w3-card w3-hover-opacity">
-                        <img src="/IMG/folhagem-1.jpg" style="width:100%; height: 350px;">
-                        <div class="w3-container">
-                            <h5 class="w3-center"><b>Folhagem 1</b></h5>
-                            <p class="w3-center">R$ 250,00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-third">
-                    <div class="w3-card w3-hover-opacity">
-                        <img src="/IMG/folhagem-3.jpg" style="width:100%; height: 350px;">
-                        <div class="w3-container">
-                            <h5 class="w3-center"><b>Folhagem 2</b></h5>
-                            <p class="w3-center">R$ 200,00</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-third">
-                    <div class="w3-card w3-hover-opacity">
-                        <img src="/IMG/folhagem-4.jpg" style="width:100%; height: 350px;">
-                        <div class="w3-container">
-                            <h5 class="w3-center"><b>Folhagem 3</b></h5>
-                            <p class="w3-center">R$ 150,00</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-         <br>
-        <br>
     </div>
+    <!-- TESTANDO O MODAL CHATBOT-->
+    <div class="chatbot-container" onclick="openChatModal()">
+        <img src="../IMG/mascote.png" alt="Chatbot" class="chatbot-image">
+    </div>
+
+    <div id="chatModal" class="chat-modal">
+        <div class="chat-modal-content">
+            <img src="IMG/mascote.png" alt="Chatbot" class="chatbot-image">
+            <p>Olá! Posso ajudar?</p>
+            <p>1 - Como posso acompanhar o status da minha encomenda?</p>
+            <p>2 - Como posso escolher a flor tropical certa para uma ocasião específica?</p>
+            <p>3 - É possível enviar uma mensagem personalizada junto com a flor?</p>
+            <p>4 - Posso personalizar um arranjo de acordo com minha preferência?</p>
+            <p>5 - Como manter as flores tropicais frescas por mais tempo?</p>
+            <p>6 - Qual o prazo de entrega?</p>
+            <p>7 - Oferecem garantia de qualidade nas flores tropicais entregues?</p>
+            <p>8 - O que devo fazer se as flores chegarem danificadas?</p>
+            <p>9 - Oferecem descontos para compras em grande quantidade?</p>
+            <input class="w3-input w3-border w3-margin-bottom" id="userBox" type="text" name="resposta" required>
+            <p id="chatLog"></p>
+            <button class="w3-button botao-cor-bot" onclick="talk()">Enviar</button>
+            <button class="w3-button botao-cor-bot" onclick="closeChatModal()">Cancelar</button>
+        </div>
+    </div>
+
+    <br>
+    <p class="w3-center"><i>"🌺 Descubra a beleza das flores tropicais com a FlorindON! Explore, escolha e celebre a
+            vida em harmonia com a natureza. </i></p>
+    <p class="w3-center"><i> Obrigado por fazer parte desta jornada sustentável conosco. 🌺"</i></p>
+
+
+    <br>
+    <h1 class="w3-center"><b>FLORES TROPICAIS</b></h1>
+    <br>
+
+    <!--Div que abriga os produtos-->
+    <div class="product-list" id="product-list">
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+                <div class="w3-card w3-hover-opacity product">
+                    <div class="produto">
+                        <img src="../IMG/Alpinia-AI.jfif" class="product-image" style="width:100%; height: 350px;">
+                        <div class="product-title">Alpínias</div>
+                        <div class="product-price">R$ 20,00</div>
+                        <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                                class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-third">
+                <div class="w3-card w3-hover-opacity product">
+                    <div class="produto">
+                        <img src="../IMG/Heliconia-Strelitzia-AI.jfif" class="product-image"
+                            style="width:100%; height: 350px;">
+                        <div class="product-title">Heliconia Sterlitzia</div>
+                        <div class="product-price">R$ 20,00</div>
+                        <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                                class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-third">
+                <div class="w3-card w3-hover-opacity product">
+                    <div class="produto">
+                        <img src="../IMG/bromelia-AI.jfif" class="product-image" style="width:100%; height: 350px;">
+                        <div class="product-title">Bromélias</div>
+                        <div class="product-price">R$ 20,00</div>
+                        <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                                class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third ">
+            <div class="w3-card w3-hover-opacity">
+                <div class="produto">
+                    <img src="../IMG/Orquidea-AI.jfif" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Orquídea</div>
+                    <div class="product-price">R$ 20,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity">
+                <div class="produto">
+                    <img src="../IMG/../IMG/Cipo-sino-AI.jfif" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Cipó-de-Sino</div>
+                    <div class="product-price">R$ 20,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity product">
+                <div class="produto">
+                    <img src="../IMG/Camelia-AI.jfif" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Camelia</div>
+                    <div class="product-price">R$ 20,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity product">
+                <div class="produto">
+                    <img src="../IMG/hibisco-AI.jfif" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Hibísco</div>
+                    <div class="product-price">R$ 20,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity product">
+                <div class="produto">
+                    <img src="../IMG/Maranta-AI.jfif" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Maranta</div>
+                    <div class="product-price">R$ 20,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity product">
+                <div class="produto">
+                    <img src="../IMG/anturio-AI.jfif" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Antúrio</div>
+                    <div class="product-price">R$ 20,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="w3-center"><b>BUQUÊS E VASOS</b></h1>
+    <br>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity">
+                <div class="produto">
+                    <img src="../IMG/Buque-tropical-1.jpg" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Beleza Tropical</div>
+                    <div class="product-price">R$ 50,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity">
+                <div class="produto">
+                    <img src="../IMG/cesto-flores-tropical.jfif" class="product-image"
+                        style="width:100%; height: 350px;">
+                    <div class="product-title">Cesto de Flores</div>
+                    <div class="product-price">R$ 100,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity">
+                <div class="produto">
+                    <img src="../IMG/Buque-tropical.jfif" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Buquê Tropical</div>
+                    <div class="product-price">R$ 50,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+    <h1 class="w3-center"><b>FOLHAGENS</b></h1>
+    <br>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity">
+                <div class="produto">
+                    <img src="../IMG/folhagem-1.jpg" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Folhagem 1</div>
+                    <div class="product-price">R$ 250,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity">
+                <div class="produto">
+                    <img src="../IMG/folhagem-3.jpg" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Folhagem 2</div>
+                    <div class="product-price">R$ 200,00</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-third">
+            <div class="w3-card w3-hover-opacity">
+                <div class="produto">
+                    <img src="../IMG/folhagem-4.jpg" class="product-image" style="width:100%; height: 350px;">
+                    <div class="product-title">Folhagem 3</div>
+                    <div class="product-price">R$ 150</div>
+                    <button class="w3-button w3-round-xxlarge w3-hover-deep-orange" onclick="addProductToCart()"><i
+                            class='fas fa-shopping-cart' style='font-size:30px'></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <br>
+    <br>
+    <div>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th class="table-head-item first-col">Item</th>
+                    <th class="table-head-item second-col">Preço</th>
+                    <th class="table-head-item third-col">Quantidade</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="cart-total-container">
+                        <strong>Total</strong>
+                        <span>R$0,00</span>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button type="button" class="purchase-button"
+            onclick="finalizarCompra();location.href='../index.html'">Finalizar
+            Compra</button>
+
+
+    </div>
+    </div>
+
+
     <br>
     <!--Inicio do Rodapé do SITE-->
     <footer class="w3-gray w3-row">
@@ -367,34 +469,35 @@
                 <h4><b>contato@florindon.com</b></h4>
             </div>
         </div>
-    
+
     </footer>
-    <script src="/JS/js.js"></script>
+    <script src="../JS/catalogo.js" defer></script>
+    <script src="../JS/carrinho.js"></script>
     <script>
         // Script for side navigation
         function w3_open() {
-          var x = document.getElementById("mySidebar");
-          x.style.width = "300px";
-          x.style.paddingTop = "10%";
-          x.style.display = "block";
+            var x = document.getElementById("mySidebar");
+            x.style.width = "300px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
         }
-        
+
         // Close side navigation
         function w3_close() {
-          document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("mySidebar").style.display = "none";
         }
-        
+
         // Used to toggle the menu on smaller screens when clicking on the menu button
         function openNav() {
-          var x = document.getElementById("navDemo");
-          if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-          } else { 
-            x.className = x.className.replace(" w3-show", "");
-          }
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
         }
-        </script>
-  
+    </script>
+
 </body>
 
 </html>

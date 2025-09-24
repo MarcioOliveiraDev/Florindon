@@ -1,6 +1,6 @@
 # 🌺 FlorindON - E-commerce de Flores Tropicais
 
-![florindon-showcase](https://user-images.githubusercontent.com/109968931/235334416-5e0a0223-455b-432a-9e32-0545f061272b.png)
+
 
 ### 🔗 **[Acesse a demonstração ao vivo do projeto](https://marciooliveiradev.github.io/Florindon/index.html)**
 

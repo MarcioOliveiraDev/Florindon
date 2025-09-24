@@ -91,4 +91,4 @@ Como este é um projeto de front-end estático, você pode executá-lo localment
 **Márcio Oliveira de Brito**
 
 - **GitHub:** [@MarcioOliveiraDev](https://github.com/MarcioOliveiraDev)
-- **LinkedIn:** [Márcio Oliveira de Brito](https://www.linkedin.com/in/marcio-oliveira-de-brito-a2b2b21b4/)
+- **LinkedIn:** [Márcio Oliveira de Brito](https://linkedin.com/in/márcio-brito-527067110)
